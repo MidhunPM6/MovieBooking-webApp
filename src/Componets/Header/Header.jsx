@@ -18,12 +18,16 @@ function Header() {
   const loginhandle = () => {
     Navigate("/login");
   };
+  const handlehome=()=>{
+    window.location.reload()
+    Navigate('/')
+  }
 
   return (
     <div className="bg-yellow-400 text-neutral-600 font-mono">
       <div className=" h-[70px] flex justify-between items-center">
         <h1>
-          <img src={img} alt="" className="w-40 pl-4 ml-6" />
+          <img onClick={ handlehome}src={img} alt="" className="w-40 pl-4 ml-6 hover:cursor-pointer" />
         </h1>
 
         <div className="flex justify-between items-center">

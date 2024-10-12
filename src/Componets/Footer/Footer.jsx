@@ -9,6 +9,10 @@ const  Navigate=useNavigate()
   Navigate('/admin')
 
 }
+ const handlehome=()=>{
+  Navigate('/')
+
+}
 
   return (
     <div>
@@ -18,7 +22,7 @@ const  Navigate=useNavigate()
       <a href="ww" className=''><h1>Terms and conditions</h1></a>
         </div>
         <div className='place-content-center '>
-            <a href="ww"><h1>Home</h1></a>
+            <button onClick={handlehome}>Home</button>
             
             <a href="ww"><h1>Copyright</h1></a>
 
