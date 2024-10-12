@@ -4,7 +4,7 @@ import postimg from "../../images/Post.jpg";
 function Post() {
   return (
     <div>
-      <div className="flex font-mono pl-10 bg-gradient-to-r from-stone-950"> 
+      <div className="flex font-mono pl-32 bg-gradient-to-r from-stone-950"> 
         <div className="bg-slate-950  items-center m-4 rounded-2xl">
           <div class=" place-content-center  bg-slate-900 border-gray-200 rounded-lg p-2 dark:bg-gray-800 dark:border-gray-700">
             <div>
