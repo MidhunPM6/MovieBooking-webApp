@@ -9,7 +9,7 @@ import { auth, db } from "./firebase/config";
 import { doc, getDoc } from "firebase/firestore";
 import Adminlogin from "./Pages/Adminlogin";
 import AdminSignUp from "./Pages/AdminSignup";
-
+import Adminpannel from "./Pages/Adminpannel";
 function App() {
   const {setUser}=useContext(AuthContext)
   onAuthStateChanged(auth, async (user) => {
@@ -33,6 +33,8 @@ function App() {
     }
   });
 
+
+
   return (
     <div>
       <Routes>
@@ -41,6 +43,8 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/admin" element={<Adminlogin />} />
         <Route path="/adminsignup" element={<AdminSignUp />} />
+        <Route path="/adminpannel" element={<Adminpannel />} />
+
 
 
       </Routes>

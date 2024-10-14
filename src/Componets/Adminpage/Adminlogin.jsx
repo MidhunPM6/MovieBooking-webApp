@@ -20,11 +20,15 @@ function Adminlogin() {
     toast.success("User Login Successfull",{
       position:"top-right",
       autoClose:2000,
-      onClose:()=>navigate('/')
+      onClose:()=>navigate('/adminpannel')
 
     })
       
     } catch (error) {
+      toast.error("Please check you entered",{
+        position:"top-right",
+        autoClose:2000,
+      })
       
     }
     
@@ -65,7 +69,7 @@ function Adminlogin() {
               placeholder="Enter Password "
               value={password}
               onChange={(e)=>setPassword(e.target.value)}
-              className="py-2 rounded-lg ml-12 mr-12 placeholder:text-center bg-gray-50 outline-none hover:outline-gray-300 focus:outline-gray-400 mt-6"
+              className=  " py-2 rounded-lg ml-12 mr-12 placeholder:text-center bg-gray-50 outline-none hover:outline-gray-300 focus:outline-gray-400 mt-6"
             />
             <div className="flex text-white">
               <button onClick={handlelogin}className="bg-yellow-400 text-white py-2 w-36  rounded-lg hover:bg-white hover:text-black hover:border-solid border-2 border-yellow-400 drop-shadow-md ml-12 mt-12" >
