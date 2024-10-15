@@ -20,7 +20,7 @@ function Adminlogin() {
     toast.success("User Login Successfull",{
       position:"top-right",
       autoClose:2000,
-      onClose:()=>navigate('/adminpannel')
+      onClose:()=>navigate('/admin')
 
     })
       
@@ -43,8 +43,8 @@ function Adminlogin() {
   }
   return (
     
-      <div className="mb-16">
-      <div className="flex place-content-center mr-16 mt-20">
+      <div className="mb-20">
+      <div className="flex place-content-center mr-16 mt-16">
         <div className="bg-yellow-400 w-[360px] h-[500px] rounded-l-lg place-content-center  ">
           <img src={loginimg} alt=""  className="w-57"/>
         </div>

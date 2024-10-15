@@ -10,6 +10,12 @@ import { doc, getDoc } from "firebase/firestore";
 import Adminlogin from "./Pages/Adminlogin";
 import AdminSignUp from "./Pages/AdminSignup";
 import Adminpannel from "./Pages/Adminpannel";
+import Addmovies from "./Pages/Addmovies";
+
+
+
+
+
 function App() {
   const {setUser}=useContext(AuthContext)
   onAuthStateChanged(auth, async (user) => {
@@ -41,9 +47,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignupPage />} />
-        <Route path="/admin" element={<Adminlogin />} />
+        <Route path="/adminlogin" element={<Adminlogin />} />
         <Route path="/adminsignup" element={<AdminSignUp />} />
-        <Route path="/adminpannel" element={<Adminpannel />} />
+        <Route path="/admin" element={<Adminpannel />} />
+        <Route path="/addmovies" element={<Addmovies />} />
+
 
 
 

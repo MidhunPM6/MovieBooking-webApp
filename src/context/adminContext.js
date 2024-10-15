@@ -4,7 +4,7 @@ import { createContext ,useState} from "react";
 
 
 
-const AdminAuth=createContext(null)
+export const AdminAuth=createContext(null)
 
 function AdminContext({children}) {
 
