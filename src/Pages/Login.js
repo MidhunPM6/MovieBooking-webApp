@@ -3,7 +3,7 @@ import Login from '../Componets/Login/Login'
 import Footer from '../Componets/Footer/Footer'
 
 function LoginPage() {
-  return (
+    return (
     <div>
         <Login  />
         <Footer />

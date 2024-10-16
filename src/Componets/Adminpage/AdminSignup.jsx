@@ -13,6 +13,10 @@ function AdminSignup() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  const handlelogin =()=>{
+    navigate('/adminlogin')
+  }
+
   const handlesignup = async (e) => {
     e.preventDefault();
 
@@ -72,8 +76,8 @@ function AdminSignup() {
               >
                 Sign up
               </button>
-              <button className="mt-12 ml-2 text-black hover:text-slate-400">
-                Create an account?
+              <button onClick={handlelogin}className="mt-12 ml-2 text-black hover:text-slate-400">
+                Already an account?
               </button>
             </div>
           </form>
